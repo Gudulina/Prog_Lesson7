@@ -1,12 +1,13 @@
-def choice ():
-    choice = input('Добавить в справочник новый номер - 1\n'
+def choice (str):
+    str_choice = input('Добавить в справочник новый номер - 1\n'
                     'Показать номер - 2\n'
                     'Что нужно сделать: ')
-    return choice
+    return str_choice
 
-def insert ():
-    data = input('Введите данные для справочника: ')
+def insert (str):
+    data = input('Введите данные для добавления в справочник: ')
     return data
 
-choice()
-insert()
+def inp_show(str):
+    request = input('Введите данные для экспорта: ')
+    return request

@@ -2,12 +2,10 @@ import input
 import ctrlv
 import export
 
-choice = input.choice
-
-if choice == '1':
-    str = input.insert()
-    ctrlv.into(str)
-elif choice == '2':
-    export.show()
-else:
-    print('Такие операции я делать ещё не умею :(')
+def start():
+    if input.choice() == '1':
+        ctrlv.into(input.insert())
+    elif input.choice() == '2':
+        export.show(input.inp_show)
+    else:
+        print('Такие операции я делать ещё не умею :(')
